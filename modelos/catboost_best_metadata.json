@@ -217,8 +217,8 @@
     "genre_subgenre"
   ],
   "lookup_rows_applied": 800,
-  "submit_path": "C:\\Users\\matut\\OneDrive\\Escritorio\\TP Nuevo\\Submits\\catboost_best_submit.csv",
-  "model_path": "C:\\Users\\matut\\OneDrive\\Escritorio\\TP Nuevo\\modelos\\catboost_best.cbm",
+  "submit_path": "Submits/catboost_best_submit.csv",
+  "model_path": "modelos/catboost_best.cbm",
   "prediction_mean": 35.744290101209685,
   "prediction_min": 0.0,
   "prediction_max": 99.0

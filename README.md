@@ -1,6 +1,7 @@
 # Prediccion de popularidad musical
 
-Repositorio de entrega con dos resultados diferenciados:
+Repositorio de entrega con dos resultados diferenciados. La lectura recomendada
+para la correccion esta en `ENTREGA.md`.
 
 1. **Modelo final reproducible**: ensamble CatBoost + ExtraTrees con postprocesamiento deterministico por subgenero.
    - Submit: `Submits/hardcode_rank_neo60_progressive_down_24.csv`
@@ -14,11 +15,14 @@ Repositorio de entrega con dos resultados diferenciados:
 
 ## Estructura
 
-- `codigo/`: scripts usados para generar los dos resultados.
+- `ENTREGA.md`: resumen corto de los dos resultados que se reportan.
+- `codigo/`: scripts usados para generar los resultados.
 - `Submits/`: submits finales y submits historicos necesarios para reconstruir el solver del leaderboard.
+- `otros csv/`: features procesadas y archivos auxiliares.
 - `otros csv/lb_probe_solver/`: scores publicos y resumen del solver.
-- `modelos/`: metadatos necesarios para reproducir configuraciones.
+- `modelos/`: metadatos de configuracion y entrenamiento.
 - `bases de datos/`: colocar aca `base_train.csv` y `base_val.csv` antes de ejecutar desde cero.
+- `REGISTRO_TP.md`: bitacora historica completa del trabajo.
 
 ## Instalacion
 

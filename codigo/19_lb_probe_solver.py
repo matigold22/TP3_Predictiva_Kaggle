@@ -30,7 +30,15 @@ def read_scores(root):
     if frozen_scores.exists():
         return pd.read_csv(frozen_scores)
 
-    text = (root / "REGISTRO_TP.md").read_text(encoding="utf-8")
+    registry_candidates = [
+        root / "REGISTRO_TP.md",
+        root / "docs" / "REGISTRO_TP.md",
+    ]
+    registry_path = next((path for path in registry_candidates if path.exists()), None)
+    if registry_path is None:
+        raise FileNotFoundError("No encontre REGISTRO_TP.md ni docs/REGISTRO_TP.md.")
+
+    text = registry_path.read_text(encoding="utf-8")
     lines = text.splitlines()
     rows = []
     seen = set()
