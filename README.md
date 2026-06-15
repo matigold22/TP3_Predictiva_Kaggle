@@ -22,7 +22,8 @@ para la correccion esta en `ENTREGA.md`.
 - `otros csv/lb_probe_solver/`: scores publicos y resumen del solver.
 - `modelos/`: metadatos de configuracion y entrenamiento.
 - `bases de datos/`: colocar aca `base_train.csv` y `base_val.csv` antes de ejecutar desde cero.
-- `REGISTRO_TP.md`: bitacora historica completa del trabajo.
+- `docs/REGISTRO_TP.md`: bitacora historica completa del trabajo.
+- `presentacion/`: material de apoyo para exponer los resultados.
 
 ## Instalacion
 

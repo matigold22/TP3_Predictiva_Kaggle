@@ -42,4 +42,5 @@ python 02_reproducir_mejor_leaderboard.py
 - `codigo/`: scripts del pipeline y del solver.
 - `Submits/README.md`: explica que submits son finales y cuales son historicos.
 - `otros csv/lb_probe_solver/report.md`: diagnostico del solver de leaderboard.
-- `REGISTRO_TP.md`: bitacora completa del proceso experimental.
+- `docs/REGISTRO_TP.md`: bitacora completa del proceso experimental.
+- `presentacion/`: guion, deck y assets visuales para presentar el trabajo.
