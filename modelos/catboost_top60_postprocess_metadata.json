@@ -1,0 +1,196 @@
+{
+  "base_submit": "catboost_fs_top60_submit.csv",
+  "base_public_r2": 0.37362,
+  "rule": "Postprocess only unseen track_id rows; keep lookup rows unchanged.",
+  "seen_rows": 800,
+  "unseen_rows": 5767,
+  "saved": [
+    {
+      "file": "catboost_top60_post_unseen_shift_p05.csv",
+      "mean": 35.343199139946144,
+      "std": 13.528872250221117,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_unseen_shift_p10.csv",
+      "mean": 35.387108078578706,
+      "std": 13.518253000346403,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_unseen_shift_p20.csv",
+      "mean": 35.474925955843815,
+      "std": 13.497048891337458,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_03.csv",
+      "mean": 35.31370042822889,
+      "std": 13.53945736940355,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_05.csv",
+      "mean": 35.32330724617242,
+      "std": 13.539528501136292,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_07.csv",
+      "mean": 35.33291406411596,
+      "std": 13.539680834744695,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_10.csv",
+      "mean": 35.34732429103126,
+      "std": 13.540061582279403,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_12.csv",
+      "mean": 35.3569311089748,
+      "std": 13.540416905391135,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_20.csv",
+      "mean": 35.39535838074894,
+      "std": 13.542649970968975,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_25.csv",
+      "mean": 35.41937542560778,
+      "std": 13.544704987618475,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_30.csv",
+      "mean": 35.44339247046662,
+      "std": 13.54726693036566,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_33.csv",
+      "mean": 35.45780269738192,
+      "std": 13.549047303283409,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_35.csv",
+      "mean": 35.46740951532546,
+      "std": 13.550335511679133,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_37.csv",
+      "mean": 35.4770173901318,
+      "std": 13.551701960365822,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_40.csv",
+      "mean": 35.4914424213453,
+      "std": 13.553868787049721,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_42.csv",
+      "mean": 35.50105910882096,
+      "std": 13.555414454323971,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_50.csv",
+      "mean": 35.53952585872362,
+      "std": 13.562405433789927,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_100.csv",
+      "mean": 35.77994304561525,
+      "std": 13.635256367408568,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_moretrees_03.csv",
+      "mean": 35.288740538288884,
+      "std": 13.54410420682409,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_sel_diff_25_35_45.csv",
+      "mean": 35.50628542543211,
+      "std": 13.556001359983878,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_sel_diff_30_35_45.csv",
+      "mean": 35.506551986961014,
+      "std": 13.556089398316997,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_sel_diff_30_37_45.csv",
+      "mean": 35.508178480658366,
+      "std": 13.556354872597918,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_away_l2_sel_diff_25_37_50.csv",
+      "mean": 35.52762084204636,
+      "std": 13.559807954464535,
+      "min": 0.0,
+      "max": 99.0
+    },
+    {
+      "file": "catboost_top60_post_blend_oldbase_03.csv",
+      "mean": 35.31264019831047,
+      "std": 13.528761798955307,
+      "min": 0.0,
+      "max": 99.0
+    }
+  ],
+  "recommended_order": [
+    "catboost_top60_post_away_l2_07.csv",
+    "catboost_top60_post_away_l2_10.csv",
+    "catboost_top60_post_away_l2_12.csv",
+    "catboost_top60_post_away_l2_20.csv",
+    "catboost_top60_post_away_l2_25.csv",
+    "catboost_top60_post_away_l2_30.csv",
+    "catboost_top60_post_away_l2_33.csv",
+    "catboost_top60_post_away_l2_35.csv",
+    "catboost_top60_post_away_l2_37.csv",
+    "catboost_top60_post_away_l2_40.csv",
+    "catboost_top60_post_away_l2_42.csv",
+    "catboost_top60_post_away_l2_50.csv",
+    "catboost_top60_post_away_l2_100.csv",
+    "catboost_top60_post_away_l2_sel_diff_25_35_45.csv",
+    "catboost_top60_post_away_l2_sel_diff_30_35_45.csv",
+    "catboost_top60_post_away_l2_sel_diff_30_37_45.csv",
+    "catboost_top60_post_away_l2_sel_diff_25_37_50.csv"
+  ]
+}

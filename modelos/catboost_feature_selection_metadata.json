@@ -1,0 +1,74 @@
+{
+  "cv": "GroupKFold_3_track_id",
+  "top_ns": [
+    60,
+    90,
+    120
+  ],
+  "base_cat_cols": [
+    "playlist_genre",
+    "playlist_subgenre",
+    "key_str",
+    "mode_str",
+    "key_mode",
+    "genre_subgenre"
+  ],
+  "params": {
+    "loss_function": "RMSE",
+    "eval_metric": "RMSE",
+    "iterations": 1000,
+    "learning_rate": 0.04,
+    "depth": 6,
+    "l2_leaf_reg": 9,
+    "random_strength": 1.2,
+    "bagging_temperature": 0.5,
+    "subsample": 0.85,
+    "rsm": 0.9,
+    "min_data_in_leaf": 35,
+    "random_seed": 505,
+    "allow_writing_files": false,
+    "thread_count": -1,
+    "verbose": false
+  },
+  "summary": [
+    {
+      "model": "catboost_fs_top60",
+      "features_used": 66,
+      "rmse_mean": 14.751405973954169,
+      "rmse_std": 0.12604646694197993,
+      "mae_mean": 10.670028026191908,
+      "r2_mean": 0.6515248931215246,
+      "oof_rmse": 14.751769035883013,
+      "oof_mae": 10.67003061866848,
+      "oof_r2": 0.6516004733008238,
+      "best_iteration_median": 998.0,
+      "elapsed_seconds": 683.2069854736328
+    },
+    {
+      "model": "catboost_fs_top120",
+      "features_used": 121,
+      "rmse_mean": 14.75220374365446,
+      "rmse_std": 0.10438721041459231,
+      "mae_mean": 10.669182561696603,
+      "r2_mean": 0.6514809809614995,
+      "oof_rmse": 14.752452580810411,
+      "oof_mae": 10.669184236814592,
+      "oof_r2": 0.6515681853432178,
+      "best_iteration_median": 966.0,
+      "elapsed_seconds": 810.5119349956512
+    },
+    {
+      "model": "catboost_fs_top90",
+      "features_used": 95,
+      "rmse_mean": 14.755051968755927,
+      "rmse_std": 0.12161549801024288,
+      "mae_mean": 10.679219492804956,
+      "r2_mean": 0.6513503137023101,
+      "oof_rmse": 14.755389160245059,
+      "oof_mae": 10.679221469954225,
+      "oof_r2": 0.6514294559308652,
+      "best_iteration_median": 996.0,
+      "elapsed_seconds": 792.4068202972412
+    }
+  ]
+}
