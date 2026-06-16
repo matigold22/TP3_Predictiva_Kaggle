@@ -13,5 +13,5 @@ Para corregir rapidamente, empezar por:
 1. `../README.md`
 2. `../ENTREGA.md`
 3. `../1_presentacion/`
-4. `../2_modelo_reproducible/`
-5. `../3_reconstruccion_submit_final/`
+4. `../2_pipeline_modelo_predictivo/`
+5. `../3_mejor_submit_competencia/`

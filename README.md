@@ -27,12 +27,12 @@ TP3_Predictiva_Kaggle/
 |   |-- PRESENTACION_MODELOS_FINAL.pptx
 |   `-- PRESENTACION_MODELOS_FINAL.pdf
 |
-|-- 2_modelo_reproducible/
+|-- 2_pipeline_modelo_predictivo/
 |   |-- b_c_entrenar_y_generar_modelo_final.ipynb
 |   |-- submission_modelo_reproducible_R2_0.39740.csv
 |   `-- README.md
 |
-|-- 3_reconstruccion_submit_final/
+|-- 3_mejor_submit_competencia/
 |   |-- reconstruir_submit_final.ipynb
 |   |-- submit_competencia_R2_0.46155.csv
 |   `-- README.md
@@ -74,14 +74,14 @@ pip install -r requirements.txt
 Modelo reproducible:
 
 ```powershell
-cd 2_modelo_reproducible
+cd 2_pipeline_modelo_predictivo
 python -m jupyter execute b_c_entrenar_y_generar_modelo_final.ipynb
 ```
 
 Mejor resultado competitivo:
 
 ```powershell
-cd 3_reconstruccion_submit_final
+cd 3_mejor_submit_competencia
 python -m jupyter execute reconstruir_submit_final.ipynb
 ```
 
@@ -90,6 +90,6 @@ python -m jupyter execute reconstruir_submit_final.ipynb
 - Presentacion: `1_presentacion/PRESENTACION_MODELOS_FINAL.pptx` y version PDF en `1_presentacion/PRESENTACION_MODELOS_FINAL.pdf`.
 - Modelo baseline: explicado en la presentacion y generado dentro del pipeline reproducible.
 - Seleccion de modelos: explicada en la presentacion y documentada en `soporte/docs/REGISTRO_TP.md`.
-- Modelo final reproducible: `2_modelo_reproducible/`.
-- Reconstruccion del mejor submit competitivo: `3_reconstruccion_submit_final/`.
+- Modelo final reproducible: `2_pipeline_modelo_predictivo/`.
+- Mejor submit competitivo: `3_mejor_submit_competencia/`.
 - Limitaciones y posibles mejoras: ultimas diapositivas de la presentacion.

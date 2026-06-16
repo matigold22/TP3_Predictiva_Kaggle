@@ -4,7 +4,7 @@ Este repositorio reporta dos resultados principales porque responden a objetivos
 
 ## 1. Modelo reproducible
 
-- Carpeta: `2_modelo_reproducible/`
+- Carpeta: `2_pipeline_modelo_predictivo/`
 - Notebook: `b_c_entrenar_y_generar_modelo_final.ipynb`
 - Submit: `submission_modelo_reproducible_R2_0.39740.csv`
 - R2 publico: `0.39740`
@@ -14,7 +14,7 @@ Este es el resultado mas defendible como modelo predictivo, porque se puede gene
 
 ## 2. Mejor resultado competitivo
 
-- Carpeta: `3_reconstruccion_submit_final/`
+- Carpeta: `3_mejor_submit_competencia/`
 - Notebook: `reconstruir_submit_final.ipynb`
 - Submit: `submit_competencia_R2_0.46155.csv`
 - R2 publico: `0.46155`
@@ -25,8 +25,8 @@ Este resultado muestra la mejor performance obtenida en Kaggle. Se informa separ
 ## Archivos clave
 
 - `1_presentacion/`: presentacion final en PPTX y PDF.
-- `2_modelo_reproducible/`: reproduccion del modelo predictivo principal.
-- `3_reconstruccion_submit_final/`: reconstruccion del mejor submit competitivo.
+- `2_pipeline_modelo_predictivo/`: reproduccion del modelo predictivo principal.
+- `3_mejor_submit_competencia/`: reconstruccion del mejor submit competitivo.
 - `datos_raw/`: bases de entrada locales.
 - `soporte/`: material historico y auxiliar.
 - `soporte/docs/REGISTRO_TP.md`: bitacora completa del proceso experimental.
