@@ -1,4 +1,4 @@
-# TP Competencia Kaggle - Entrega final
+﻿# TP Competencia Kaggle - Entrega final
 
 Prediccion de popularidad de tracks de Spotify. Metrica: R2 publico.
 
@@ -38,21 +38,20 @@ TP3_Predictiva_Kaggle/
 |   |-- submit_competencia_R2_0.46155.csv
 |   `-- README.md
 |
-|-- codigo/
-|   `-- notebooks auxiliares del pipeline
-|
-|-- Submits/
-|   `-- submits historicos usados por el solver
-|
-|-- otros csv/
-|   `-- features procesadas y archivos auxiliares
-|
-|-- modelos/
-|   `-- metadatos de entrenamiento
-|
-`-- docs/
-    `-- REGISTRO_TP.md
+`-- soporte/
+    |-- codigo/
+    |   `-- notebooks auxiliares del pipeline
+    |-- Submits/
+    |   `-- submits historicos usados por el solver
+    |-- otros csv/
+    |   `-- features procesadas y archivos auxiliares
+    |-- modelos/
+    |   `-- metadatos de entrenamiento
+    `-- docs/
+        `-- REGISTRO_TP.md
 ```
+
+La carpeta `soporte/` no es lo primero que hay que leer para corregir la entrega. Se conserva para trazabilidad: contiene notebooks intermedios, submits historicos, features procesadas, metadatos y la bitacora completa.
 
 ## Instalacion
 
@@ -82,7 +81,7 @@ python -m jupyter execute reconstruir_submit_final.ipynb
 
 - Presentacion: `1_presentacion/PRESENTACION_MODELOS_FINAL.pptx`.
 - Modelo baseline: explicado en la presentacion y generado dentro del pipeline reproducible.
-- Seleccion de modelos: explicada en la presentacion y documentada en `docs/REGISTRO_TP.md`.
+- Seleccion de modelos: explicada en la presentacion y documentada en `soporte/docs/REGISTRO_TP.md`.
 - Modelo final reproducible: `2_modelo_reproducible/`.
 - Reconstruccion del mejor submit competitivo: `3_reconstruccion_submit_final/`.
 - Limitaciones y posibles mejoras: ultimas diapositivas de la presentacion.

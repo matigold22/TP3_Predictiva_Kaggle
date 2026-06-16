@@ -1,4 +1,4 @@
-# Resumen de entrega
+﻿# Resumen de entrega
 
 Este repositorio reporta dos resultados principales porque responden a objetivos distintos.
 
@@ -27,6 +27,6 @@ Este resultado muestra la mejor performance obtenida en Kaggle. Se informa separ
 - `1_presentacion/`: deck final, guion y graficos.
 - `2_modelo_reproducible/`: reproduccion del modelo predictivo principal.
 - `3_reconstruccion_submit_final/`: reconstruccion del mejor submit competitivo.
-- `datos_raw/`: bases de entrada.
-- `Submits/`: submits historicos necesarios para el solver.
-- `docs/REGISTRO_TP.md`: bitacora completa del proceso experimental.
+- `datos_raw/`: bases de entrada locales.
+- `soporte/`: material historico y auxiliar.
+- `soporte/docs/REGISTRO_TP.md`: bitacora completa del proceso experimental.

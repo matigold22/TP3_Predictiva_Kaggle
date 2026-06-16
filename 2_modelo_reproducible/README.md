@@ -1,4 +1,4 @@
-# Modelo reproducible
+﻿# Modelo reproducible
 
 Esta carpeta contiene el pipeline principal de entrega.
 
@@ -16,7 +16,7 @@ Desde esta carpeta:
 python -m jupyter execute b_c_entrenar_y_generar_modelo_final.ipynb
 ```
 
-El notebook usa las bases en `../datos_raw/` y los notebooks auxiliares en `../codigo/`.
+El notebook usa las bases en `../datos_raw/` y los notebooks auxiliares en `../soporte/codigo/`.
 
 ## Que hace
 
@@ -26,4 +26,4 @@ El notebook usa las bases en `../datos_raw/` y los notebooks auxiliares en `../c
 4. Genera postprocesos sobre filas no vistas.
 5. Entrena ExtraTrees como fuente de ranking complementaria.
 6. Aplica ajustes por subgenero.
-7. Genera `Submits/hardcode_rank_neo60_progressive_down_24.csv`.
+7. Genera `../soporte/Submits/hardcode_rank_neo60_progressive_down_24.csv`.

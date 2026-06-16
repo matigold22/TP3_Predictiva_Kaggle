@@ -1,4 +1,4 @@
-# Reconstruccion del mejor submit competitivo
+﻿# Reconstruccion del mejor submit competitivo
 
 Esta carpeta reconstruye el mejor resultado publico obtenido en Kaggle.
 
@@ -18,9 +18,9 @@ python -m jupyter execute reconstruir_submit_final.ipynb
 
 El notebook usa:
 
-- submits historicos en `../Submits/`;
-- scores publicos en `../otros csv/lb_probe_solver/leaderboard_results.csv`;
-- features auxiliares en `../otros csv/`.
+- submits historicos en `../soporte/Submits/`;
+- scores publicos en `../soporte/otros csv/lb_probe_solver/leaderboard_results.csv`;
+- features auxiliares en `../soporte/otros csv/`.
 
 ## Aclaracion
 
