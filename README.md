@@ -24,7 +24,8 @@ TP3_Predictiva_Kaggle/
 |   `-- base_val.csv
 |
 |-- 1_presentacion/
-|   `-- PRESENTACION_MODELOS_FINAL.pptx
+|   |-- PRESENTACION_MODELOS_FINAL.pptx
+|   `-- PRESENTACION_MODELOS_FINAL.pdf
 |
 |-- 2_modelo_reproducible/
 |   |-- b_c_entrenar_y_generar_modelo_final.ipynb
@@ -86,7 +87,7 @@ python -m jupyter execute reconstruir_submit_final.ipynb
 
 ## Mapa a la consigna
 
-- Presentacion: `1_presentacion/PRESENTACION_MODELOS_FINAL.pptx`.
+- Presentacion: `1_presentacion/PRESENTACION_MODELOS_FINAL.pptx` y version PDF en `1_presentacion/PRESENTACION_MODELOS_FINAL.pdf`.
 - Modelo baseline: explicado en la presentacion y generado dentro del pipeline reproducible.
 - Seleccion de modelos: explicada en la presentacion y documentada en `soporte/docs/REGISTRO_TP.md`.
 - Modelo final reproducible: `2_modelo_reproducible/`.

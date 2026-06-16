@@ -24,7 +24,7 @@ Este resultado muestra la mejor performance obtenida en Kaggle. Se informa separ
 
 ## Archivos clave
 
-- `1_presentacion/`: presentacion final.
+- `1_presentacion/`: presentacion final en PPTX y PDF.
 - `2_modelo_reproducible/`: reproduccion del modelo predictivo principal.
 - `3_reconstruccion_submit_final/`: reconstruccion del mejor submit competitivo.
 - `datos_raw/`: bases de entrada locales.
