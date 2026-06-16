@@ -53,6 +53,15 @@ TP3_Predictiva_Kaggle/
 
 La carpeta `soporte/` no es lo primero que hay que leer para corregir la entrega. Se conserva para trazabilidad: contiene notebooks intermedios, submits historicos, features procesadas, metadatos y la bitacora completa.
 
+## Datos de entrada
+
+Las bases originales deben ubicarse localmente en `datos_raw/` con estos nombres:
+
+- `datos_raw/base_train.csv`
+- `datos_raw/base_val.csv`
+
+Estos archivos no se versionan en GitHub. Se dejaron excluidos del repositorio porque el push fue bloqueado por GitHub Push Protection al detectar un patron sensible dentro de los CSV. Por eso, para reproducir la entrega, se debe descargar o copiar las bases originales de la competencia en esa carpeta antes de ejecutar las notebooks.
+
 ## Instalacion
 
 ```powershell

@@ -18,6 +18,13 @@ python -m jupyter execute b_c_entrenar_y_generar_modelo_final.ipynb
 
 El notebook usa las bases en `../datos_raw/` y los notebooks auxiliares en `../soporte/codigo/`.
 
+Antes de correrlo, verificar que existan:
+
+- `../datos_raw/base_train.csv`
+- `../datos_raw/base_val.csv`
+
+Las bases no estan versionadas en GitHub porque el push fue bloqueado por GitHub Push Protection al detectar un patron sensible dentro de los CSV. Deben agregarse localmente desde los datos originales de la competencia.
+
 ## Que hace
 
 1. Genera features.

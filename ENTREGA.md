@@ -30,3 +30,7 @@ Este resultado muestra la mejor performance obtenida en Kaggle. Se informa separ
 - `datos_raw/`: bases de entrada locales.
 - `soporte/`: material historico y auxiliar.
 - `soporte/docs/REGISTRO_TP.md`: bitacora completa del proceso experimental.
+
+## Nota sobre los datos
+
+Las bases `base_train.csv` y `base_val.csv` deben estar en `datos_raw/` para ejecutar las notebooks. No se suben al repositorio porque GitHub bloqueo el push al detectar un patron sensible dentro de los CSV. La carpeta queda indicada como punto de entrada para que, con los datos originales de la competencia, se pueda reproducir el modelo.
