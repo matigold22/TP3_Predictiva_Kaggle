@@ -24,8 +24,7 @@ TP3_Predictiva_Kaggle/
 |   `-- base_val.csv
 |
 |-- 1_presentacion/
-|   |-- PRESENTACION_MODELOS_FINAL.pptx
-|   `-- GUION_PRESENTACION_MODELOS.md
+|   `-- PRESENTACION_MODELOS_FINAL.pptx
 |
 |-- 2_modelo_reproducible/
 |   |-- b_c_entrenar_y_generar_modelo_final.ipynb
