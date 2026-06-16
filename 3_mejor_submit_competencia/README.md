@@ -22,6 +22,22 @@ El notebook usa:
 - scores publicos en `../soporte/otros csv/lb_probe_solver/leaderboard_results.csv`;
 - features auxiliares en `../soporte/otros csv/`.
 
+## Salida esperada
+
+El notebook reconstruye el archivo historico:
+
+- `../soporte/Submits/lb_probe_v9_residual_refined_primary_t3000_a075.csv`
+
+La carpeta incluye ademas una copia visible para la entrega:
+
+- `submit_competencia_R2_0.46155.csv`
+
+Ambos archivos representan el mismo submit competitivo (`R2 = 0.46155`).
+
 ## Aclaracion
 
 Este resultado se reporta como mejor performance competitiva. No reemplaza la capa de modelo reproducible: la complementa.
+
+## Nota de reproducibilidad
+
+Esta capa depende de submits historicos y de sus scores publicos. Por eso reproduce el mejor archivo enviado a la competencia, pero no debe leerse como un modelo entrenable solamente desde `train` y `test`.
