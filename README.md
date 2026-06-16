@@ -1,29 +1,58 @@
-# Prediccion de popularidad musical
+# TP Competencia Kaggle - Entrega final
 
-Repositorio de entrega con dos resultados diferenciados. La lectura recomendada
-para la correccion esta en `ENTREGA.md`.
+Prediccion de popularidad de tracks de Spotify. Metrica: R2 publico.
 
-1. **Modelo final reproducible**: ensamble CatBoost + ExtraTrees con postprocesamiento deterministico por subgenero.
-   - Submit: `Submits/hardcode_rank_neo60_progressive_down_24.csv`
-   - R2 publico: `0.39740`
-   - Rol en la entrega: modelo/pipeline principal.
+La entrega separa dos capas, porque cumplen roles distintos:
 
-2. **Mejor resultado de competencia**: ensamble transductivo calibrado con feedback del leaderboard publico.
-   - Submit: `Submits/lb_probe_v9_residual_refined_primary_t3000_a075.csv`
-   - R2 publico: `0.46155`
-   - Rol en la entrega: experimento adicional de optimizacion de competencia, no modelo principal.
+| Capa | Que es | R2 publico | Reproducible desde |
+| --- | --- | --- | --- |
+| Modelo reproducible | CatBoost + ExtraTrees + feature engineering + lookup + postprocesamiento deterministico | 0.39740 | datos crudos |
+| Mejor resultado competitivo | Ensamble transductivo calibrado con feedback del leaderboard publico | 0.46155 | submits historicos + scores publicos |
+
+El modelo reproducible es la respuesta mas directa a la consigna como pipeline predictivo. El resultado competitivo se reporta aparte porque logra mejor score publico, pero usa informacion del leaderboard.
 
 ## Estructura
 
-- `ENTREGA.md`: resumen corto de los dos resultados que se reportan.
-- `codigo/`: scripts usados para generar los resultados.
-- `Submits/`: submits finales y submits historicos necesarios para reconstruir el solver del leaderboard.
-- `otros csv/`: features procesadas y archivos auxiliares.
-- `otros csv/lb_probe_solver/`: scores publicos y resumen del solver.
-- `modelos/`: metadatos de configuracion y entrenamiento.
-- `bases de datos/`: colocar aca `base_train.csv` y `base_val.csv` antes de ejecutar desde cero.
-- `docs/REGISTRO_TP.md`: bitacora historica completa del trabajo.
-- `presentacion/`: material de apoyo para exponer los resultados.
+```text
+TP3_Predictiva_Kaggle/
+|-- README.md
+|-- ENTREGA.md
+|-- requirements.txt
+|
+|-- datos_raw/
+|   |-- base_train.csv
+|   `-- base_val.csv
+|
+|-- 1_presentacion/
+|   |-- PRESENTACION_MODELOS_FINAL.pptx
+|   |-- GUION_PRESENTACION_MODELOS.md
+|   `-- presentacion_assets/
+|
+|-- 2_modelo_reproducible/
+|   |-- b_c_entrenar_y_generar_modelo_final.ipynb
+|   |-- submission_modelo_reproducible_R2_0.39740.csv
+|   `-- README.md
+|
+|-- 3_reconstruccion_submit_final/
+|   |-- reconstruir_submit_final.ipynb
+|   |-- submit_competencia_R2_0.46155.csv
+|   `-- README.md
+|
+|-- codigo/
+|   `-- notebooks auxiliares del pipeline
+|
+|-- Submits/
+|   `-- submits historicos usados por el solver
+|
+|-- otros csv/
+|   `-- features procesadas y archivos auxiliares
+|
+|-- modelos/
+|   `-- metadatos de entrenamiento
+|
+`-- docs/
+    `-- REGISTRO_TP.md
+```
 
 ## Instalacion
 
@@ -33,38 +62,27 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Reproducir el modelo final principal
+## Como correr
 
-Con `base_train.csv` y `base_val.csv` dentro de `bases de datos/`:
-
-```powershell
-python 01_entrenar_y_generar_modelo_final.py
-```
-
-Este comando ejecuta la cadena reproducible:
-
-```text
-feature engineering
--> CatBoost base
--> CatBoost top 60
--> postproceso away-l2
--> ExtraTrees
--> ensamble por ranking
--> ajuste neo soul
--> ajuste progressive electro house
--> Submits/hardcode_rank_neo60_progressive_down_24.csv
-```
-
-## Reproducir el mejor resultado de competencia
+Modelo reproducible:
 
 ```powershell
-python 02_reproducir_mejor_leaderboard.py
+cd 2_modelo_reproducible
+python -m jupyter execute b_c_entrenar_y_generar_modelo_final.ipynb
 ```
 
-Este comando reconstruye el submit `0.46155` a partir de los submits historicos y los scores publicos registrados.
+Mejor resultado competitivo:
 
-## Aclaracion metodologica
+```powershell
+cd 3_reconstruccion_submit_final
+python -m jupyter execute reconstruir_submit_final.ipynb
+```
 
-El submit `0.39740` es el modelo final principal porque puede explicarse como un pipeline predictivo entrenable y reproducible.
+## Mapa a la consigna
 
-El submit `0.46155` se informa como mejor resultado experimental de competencia, pero usa feedback del leaderboard publico. Por eso tiene mayor riesgo de sobreajuste al conjunto publico y no se presenta como modelo predictivo principal.
+- Presentacion: `1_presentacion/PRESENTACION_MODELOS_FINAL.pptx`.
+- Modelo baseline: explicado en la presentacion y generado dentro del pipeline reproducible.
+- Seleccion de modelos: explicada en la presentacion y documentada en `docs/REGISTRO_TP.md`.
+- Modelo final reproducible: `2_modelo_reproducible/`.
+- Reconstruccion del mejor submit competitivo: `3_reconstruccion_submit_final/`.
+- Limitaciones y posibles mejoras: ultimas diapositivas de la presentacion.

@@ -6,3 +6,5 @@ __pycache__/
 # Bases originales si no corresponde publicarlas.
 bases de datos/base_train.csv
 bases de datos/base_val.csv
+datos_raw/base_train.csv
+datos_raw/base_val.csv

@@ -7,6 +7,6 @@ Archivos principales para la entrega:
 - `lb_probe_v9_residual_refined_primary_t3000_a075.csv`: mejor resultado de
   competencia, R2 publico `0.46155`.
 
-El resto de los CSV se conserva porque `codigo/19_lb_probe_solver.py` necesita
+El resto de los CSV se conserva porque `codigo/19_lb_probe_solver.ipynb` necesita
 los submits historicos y sus scores publicos para reconstruir el mejor resultado
 de leaderboard. No todos son modelos finales.

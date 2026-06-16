@@ -1,0 +1,5 @@
+*.csv text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf
+*.pptx binary
+*.png binary
